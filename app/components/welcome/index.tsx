@@ -319,11 +319,11 @@ const Welcome: FC<IWelcomeProps> = ({
                   className='text-gray-500'
                   href={siteInfo.privacy_policy}
                   target='_blank'>{t('app.chat.privacyPolicyMiddle')}</a>
-                {t('app.chat.privacyPolicyRight')}
+                {t('app.chat.privacyPolicyRight')} <br />
               </div>
               : <div>
               </div>}
-            <a className='flex items-center pr-3 space-x-3' href="http://www.4u4v.net/" target="_blank">
+            <br /><a className='flex items-center pr-3 space-x-3' href="http://www.4u4v.net/" target="_blank">
               <span className='uppercase'>{t('app.chat.powerBy')}</span>
               水木心理驿站
             </a>

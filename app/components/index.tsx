@@ -38,7 +38,7 @@ const Main: FC = () => {
 
   useEffect(() => {
     if (APP_INFO?.title)
-      document.title = `${APP_INFO.title} - Powered by 水木心理驿站`
+      document.title = `${APP_INFO.title}`
   }, [APP_INFO?.title])
 
   /*
