@@ -310,25 +310,27 @@ const Welcome: FC<IWelcomeProps> = ({
         {hasSetInputs && renderHasSetInputs()}
 
         {/* foot */}
-        {!hasSetInputs && (
-          <div className='mt-4 flex justify-between items-center h-8 text-xs text-gray-400'>
-
-            {siteInfo.privacy_policy
-              ? <div>{t('app.chat.privacyPolicyLeft')}
-                <a
-                  className='text-gray-500'
-                  href={siteInfo.privacy_policy}
-                  target='_blank'>{t('app.chat.privacyPolicyMiddle')}</a>
-                {t('app.chat.privacyPolicyRight')} <br />
+        {!hasSetInputs &&
+          (
+            <div className='mt-4 flex justify-between items-center h-8 text-xs text-gray-400'>
+              {siteInfo.privacy_policy
+                ? <div>{t('app.chat.privacyPolicyLeft')}
+                  <a className='text-gray-500' href={siteInfo.privacy_policy} target='_blank'>
+                    {t('app.chat.privacyPolicyMiddle')}
+                  </a>
+                  {t('app.chat.privacyPolicyRight')} <br />
+                </div>
+                : <div> </div>
+              }
+              <br class="clear" />
+              <div>
+                <a className='flex items-center pr-3 space-x-3' href="http://www.4u4v.net/" target="_blank">
+                  <span className='uppercase'>{t('app.chat.powerBy')}</span>
+                  水木心理驿站
+                </a>
               </div>
-              : <div>
-              </div>}
-            <br /><a className='flex items-center pr-3 space-x-3' href="http://www.4u4v.net/" target="_blank">
-              <span className='uppercase'>{t('app.chat.powerBy')}</span>
-              水木心理驿站
-            </a>
-          </div>
-        )}
+            </div>
+          )}
       </div>
     </div >
   )
