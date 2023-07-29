@@ -5,8 +5,8 @@ export const API_URL = ''
 export const APP_INFO: AppInfo = {
   title: 'Chat APP',
   description: '',
-  copyright: '',
-  privacy_policy: '',
+  copyright: '4u4v.com',
+  privacy_policy: 'privacy/policy',
   default_language: 'zh-Hans',
 }
 
