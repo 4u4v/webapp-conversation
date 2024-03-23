@@ -192,6 +192,8 @@ const Answer: FC<IAnswerProps> = ({ item, feedbackDisabled = false, onFeedback, 
                 : (
                   <Markdown content={content} />
                 )}
+                  <Markdown content={JSON.parse(decodeURIComponent(content))} />
+                )} {/* 这里报错：SyntaxError: Bad Unicode escape in JSON at position */}
             </div>
             <div className='absolute top-[-14px] right-[-14px] flex flex-row justify-end gap-1'>
               {!feedbackDisabled && !item.feedbackDisabled && renderItemOperation()}
