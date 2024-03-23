@@ -189,9 +189,7 @@ const Answer: FC<IAnswerProps> = ({ item, feedbackDisabled = false, onFeedback, 
                     <LoadingAnim type='text' />
                   </div>
                 )
-                : (
-                  <Markdown content={content} />
-                )}
+                : (content)}
             </div>
             <div className='absolute top-[-14px] right-[-14px] flex flex-row justify-end gap-1'>
               {!feedbackDisabled && !item.feedbackDisabled && renderItemOperation()}
