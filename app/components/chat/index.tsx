@@ -190,7 +190,7 @@ const Answer: FC<IAnswerProps> = ({ item, feedbackDisabled = false, onFeedback, 
                   </div>
                 )
                 : (
-                  <Markdown content={JSON.parse(content)} />
+                  <Markdown content={content} />
                 )}
             </div>
             <div className='absolute top-[-14px] right-[-14px] flex flex-row justify-end gap-1'>
